@@ -11,81 +11,106 @@ draft = false
     I originally pulled the image from the host website
     (eavesdroppingonwetlandbirds.com.au)
 -->
+
 {{< section/hero
 caption="">}}
-Can you hear a <br><span class="oe-theme-emphasis">Australasian Bittern</span>?
+Can you hear an <br><span class="oe-theme-emphasis">Australasian Bittern</span>?
 {{< /section/hero >}}
 
 {{< section/call-to-action >}}
-The Plains Wanderer is critically endangered due to habitat loss, predation, and climate change. We're on a mission to train our AI to recognise their calls, and we need your help! By checking the tags our system has put on bird calls, you can help ensure they're correct. This helps us monitor their populations and habitats more effectively, contributing to conservation efforts.
+The Australasian Bittern is a threatened species that are difficult to find and
+identify due to their natural camouflage into wetland environments. Our team
+aims to track and identify the Australasian Bittern's distinct calls.
 <a class="oe-theme-emphasis" href="/verify">
 Sign up or log in </a> to start verifying calls.
 {{< /section/call-to-action >}}
+
+{{< section/image-column
+image="images/bittern.jpg"
+alt="Australasian Bittern"
+caption=""
+imagePosition="left" >}}
+
+<div class="progress-container">
+    <div>
+        <h2>Research Objectives</h3>
+        <p>
+            By helping identify Bittern calls, you're contributing to a growing
+            library of acoustic data that:
+        </p>
+        <ul>
+            <li>
+                Better understand the distribution of little-known wetland bird
+                species in south-eastern Australia
+            </li>
+            <li>Improve artificial intelligence training datasets</li>
+            <li>Determining the presence or absence of bird species</li>
+            <li>
+                Contributes to research projects trialing the large-scale
+                deployment of acoustic sensors with manual data collection
+            </li>
+        </ul>
+    </div>
+</div>
+
+{{< section/project-progress >}}
+{{< /section/project-progress >}}
+
+{{< /section/image-column >}}
 
 ## About the group
 
 {{< section/cards >}}
 
-{{< card image="images/Plains-wanderer.jpg" alt="Plains Wanderer" >}}
+{{< card image="images/people/dr-Znidersic.jpg" alt="Dr Elizabeth (Liz) Znidersic" >}}
 
-### Card Title 1
+### Dr Elizabeth (Liz) Znidersic
 
-Some quick example text to build on the card title and make up the bulk of the card's content.
+Dr Elizabeth (Liz) Znidersic is a post-doctoral researcher with Charles Sturt
+University. Her major research interests include survey methodologies and the
+application of technological tools to monitor individual species and ecosystems,
+wetland species and their management and island biodiversity and species
+reintroductions/translocations. Liz’s research has led her into the wetlands of
+Australia and the USA, searching for some the most secretive wetland birds using
+acoustic and motion-activated camera monitoring. She has worked extensively in
+the field as a ranger, field ecologist and environmental educator with
+nature-based tourism.
 
 <sl-button href="/" pill>Link to a page</sl-button>
 {{< /card>}}
 
 <--->
 
-{{< card image="images/Plains-wanderer.jpg" alt="Plains Wanderer" >}}
+{{< card image="images/people/dr-Towsey.jpg" alt="Dr Towsey" >}}
 
-### Card Title 2
+### Dr Michael Towsey
 
-Some quick example text to build on the card title and make up the bulk of the card's content.
+Dr Michael Towsey uses machine learning methods to solve biological problems.
+These have ranged from the sublime (analysis of bird song) to the ridiculous
+(analysis of milk yield in cow herds) with some bioinformatics in between!
+Michael works on the ‘big data’ problems associated with long duration
+recordings of the environment, in particular, building recognizers for species
+of interest, extracting acoustic indices to aid navigation and visualisation.
+He is currently submerged in the sounds of wetlands.
 
 <sl-button href="/" pill>Link to a page</sl-button>
 {{< /card >}}
 
 <--->
-{{< card image="images/Plains-wanderer.jpg" alt="Plains Wanderer" >}}
+{{< card image="images/people/Professor-David-Watson.jpg" alt="Professor David Watson" >}}
 
-### Card Title 3
+### Professor David Watson
 
-Some quick example text to build on the card title and make up the bulk of the card's content.
+Professor David M Watson’s research falls into three principal areas: managing
+biodiversity in agricultural landscapes; measuring and predicting the biological
+effects of habitat fragmentation; and the ecology of parasitic plants. His
+research has been conducted through detailed community-level field studies in
+Australia and Latin America; species-specific studies of distribution and
+abundance; theoretical advances; empirical studies based on previously published
+data; & synthetic reviews consolidating existing information and proposing new
+hypotheses.
 
 <sl-button href="/" pill>Link to a page</sl-button>
 {{< /card >}}
 
 {{< /section/cards >}}
-
-{{< section/image-column
-image="images/Plains-wanderer.jpg"
-alt="Plains Wanderer in Grass. Image by Dominic Sherony"
-caption="Image: Dominic Sherony, CC BY-SA 2.0, via Wikimedia Commons"
-imagePosition="left" >}}
-
-## Plains Wanderer Status
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<a class="microsite-btn microsite-btn-primary"> Read more </a>
-{{< /section/image-column >}}
-
-<div class="progress-container">
-    {{< section/project-progress >}}
-    {{< /section/project-progress >}}
-    <div>
-        <h2>Why it matters</h3>
-        <p>
-            By helping identify bird calls, you're contributing to a growing
-            library of acoustic data that:
-        </p>
-        <ul>
-            <li>Tracks how species respond to climate change</li>
-            <li>Monitors ecosystem health after disasters</li>
-            <li>
-                Guides restoration efforts to ensure habitats don't just
-                look right — they sound right, too
-            </li>
-        </ul>
-    </div>
-</div>
