@@ -21,8 +21,6 @@ Can you hear an <br><span class="oe-theme-emphasis">Australasian Bittern</span>?
 The Australasian Bittern is a threatened species that are difficult to find and
 identify due to their natural camouflage into wetland environments. Our team
 aims to track and identify the Australasian Bittern's distinct calls.
-<a class="oe-theme-emphasis" href="/verify">
-Sign up or log in </a> to start verifying calls.
 {{< /section/call-to-action >}}
 
 {{< section/image-column
