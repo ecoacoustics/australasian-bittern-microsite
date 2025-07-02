@@ -4,9 +4,16 @@ date = 2023-01-01T08:00:00-07:00
 draft = false
 +++
 
+<!--
+    Hero image is a stock image from adobe stock images
+    https://images.app.goo.gl/41SYSDnxCKGj9Bku7
+
+    I originally pulled the image from the host website
+    (eavesdroppingonwetlandbirds.com.au)
+-->
 {{< section/hero
-caption=" Image: JJ Harrison, CC BY-SA 3.0, via Wikimedia Commons">}}
-Can you hear a <br><span class="oe-theme-emphasis">Plains Wanderer</span>?
+caption="">}}
+Can you hear a <br><span class="oe-theme-emphasis">Australasian Bittern</span>?
 {{< /section/hero >}}
 
 {{< section/call-to-action >}}
