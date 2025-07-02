@@ -74,7 +74,9 @@ acoustic and motion-activated camera monitoring. She has worked extensively in
 the field as a ranger, field ecologist and environmental educator with
 nature-based tourism.
 
-<sl-button href="/" pill>Link to a page</sl-button>
+<sl-button href="https://www.csu.edu.au/research/ilws/team/profiles/members/elizabeth-znidersic" pill>
+    See Profile
+</sl-button>
 {{< /card>}}
 
 <--->
@@ -91,7 +93,9 @@ recordings of the environment, in particular, building recognizers for species
 of interest, extracting acoustic indices to aid navigation and visualisation.
 He is currently submerged in the sounds of wetlands.
 
-<sl-button href="/" pill>Link to a page</sl-button>
+<sl-button href="https://www.csu.edu.au/research/ilws/team/research-members" pill>
+    See Profile
+</sl-button>
 {{< /card >}}
 
 <--->
@@ -108,7 +112,9 @@ abundance; theoretical advances; empirical studies based on previously published
 data; & synthetic reviews consolidating existing information and proposing new
 hypotheses.
 
-<sl-button href="/" pill>Link to a page</sl-button>
+<sl-button href="https://www.csu.edu.au/research/ilws/team/profiles/members/david-watson" pill>
+    See Profile
+</sl-button>
 {{< /card >}}
 
 {{< /section/cards >}}
