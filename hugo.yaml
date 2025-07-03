@@ -179,11 +179,11 @@ params:
     # Theme colors are defined using "hsl" (hue, saturation, lightness).
     # To create your own hsl theme color, you can use the following website.
     # https://hslpicker.com/#e9e61f
-    ThemeColor:
+    themeColor:
       hue: 59deg
       saturation: 82.1%
       lightness: 51.8%
-    ThemeShades:
+    themeShades:
       "50": 251 250 212
       "100": 249 248 194
       "200": 247 245 170

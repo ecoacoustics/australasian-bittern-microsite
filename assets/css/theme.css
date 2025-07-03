@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root, oe-verification-grid {
+    /* Fonts */
+    --oe-heading-font: 'Inter', sans-serif;
+    --oe-font-family: 'Inter', sans-serif;
+    --oe-font-color: #fff;
+    --oe-font-color-lighter: #fff;
+    --oe-font-color-toned: #e8e720;
+    --oe-inverse-color: #000;
+
+    /* Backgrounds */
+    --oe-background-light: rgb(116, 116, 116);
+    --oe-background-color: rgb(116, 116, 116);
+    --oe-background-dark: #58585a;
+    --oe-panel-color: var(--oe-background-color);
+
+    /* Font Sizes */
+    --oe-font-size-small: 0.8rem;
+    --oe-font-size: 0.8rem;
+    --oe-font-size-medium: 1.5rem;
+
+    /* Paddings */
+    --oe-padding-small: 0.5rem;
+    --oe-padding-medium: 1rem;
+    --oe-padding-large: 2rem;
+    --oe-padding-xlarge: 2.5rem;
+
+    /* Other */
+    --oe-navbar-height: 4rem;
+    --oe-panel-opacity: 0.8;
+    --oe-transition-duration: 0.3s;
+    --oe-transition-timing: ease-in-out;
+    --oe-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --oe-box-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --oe-border-radius: 0.25rem;
+
+    --sl-color-neutral-0: var(--oe-background-dark);
+    --sl-color-neutral-700: white;
+    --sl-color-neutral-1000: white;
+}
