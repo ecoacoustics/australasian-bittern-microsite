@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+    /* Fonts */
+    --micro-heading-font: 'Inter', sans-serif;
+    --micro-body-font: 'Inter', sans-serif;
+    --micro-font-color: #fff;
+    --micro-font-color-light: #fff;
+    --micro-font-color-toned: #e8e720;
+    --micro-inverse-color: #000;
+    --micro-heading-color: #fff;
+
+    /* Backgrounds */
+    --micro-background-light: rgb(116, 116, 116);
+    --micro-background-dark: #58585a;
+    --micro-panel-color: var(--micro-background-color);
+
+    /* Font Sizes */
+    --micro-font-size-xsmall: 0.8rem;
+    --micro-font-size-small: 1rem;
+    --micro-font-size-medium: 1.5rem;
+    --micro-font-size-larger: 2.25rem;
+    --micro-font-size-xlarge: 4.5rem;
+
+    /* Paddings */
+    --micro-padding-small: 0.5rem;
+    --micro-padding-medium: 1rem;
+    --micro-padding-large: 2rem;
+    --micro-padding-xlarge: 2.5rem;
+
+    /* Other */
+    --micro-navbar-height: 4rem;
+    --micro-panel-opacity: 0.8;
+    --micro-transition-duration: 0.3s;
+    --micro-transition-timing: ease-in-out;
+    --micro-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --micro-box-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --micro-border-radius: 0.25rem;
+
+    --sl-color-neutral-0: var(--micro-background-dark);
+    --sl-color-neutral-700: white;
+    --sl-color-neutral-1000: white;
+}
