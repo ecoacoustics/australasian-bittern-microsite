@@ -13,8 +13,9 @@ draft = false
 -->
 
 {{< section/hero
-caption="">}}
-Can you hear an <br><span class="oe-theme-emphasis">Australasian Bittern</span>?
+caption=""
+title="Can you hear an Australasian Bittern?">}}
+<img src="project-logo.png" style="max-width: 100%">
 {{< /section/hero >}}
 
 {{< section/call-to-action >}}
