@@ -15,7 +15,9 @@ draft = false
 {{< section/hero
 caption=""
 title="Can you hear an Australasian Bittern?">}}
-<img src="project-logo.png" style="max-width: 100%">
+<a href="https://eavesdroppingonwetlandbirds.com.au/" target="_blank">
+    <img src="project-logo.png" style="max-width: 100%">
+</a>
 {{< /section/hero >}}
 
 {{< section/call-to-action >}}
