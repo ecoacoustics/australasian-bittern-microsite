@@ -41,3 +41,10 @@
     --sl-color-neutral-700: white;
     --sl-color-neutral-1000: white;
 }
+
+#home-page {
+    #meet-the-team {
+        font-weight: bold;
+        margin-top: 3rem;
+    }
+}
