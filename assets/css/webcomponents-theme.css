@@ -6,7 +6,7 @@
     --oe-font-color: var(--micro-font-color) !important;
     --oe-background-color: var(--micro-background-light) !important;
 
-    --oe-info-bg-color: var(--sl-color-blue-600:) !important;
+    --oe-info-bg-color: transparent !important;
 
     /*
         TODO: Remove this panel color override once new web components styling
