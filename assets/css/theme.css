@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css");
 
 :root {
     /* Fonts */
@@ -38,6 +39,7 @@
     --micro-border-radius: 0.25rem;
 
     --sl-color-neutral-0: var(--micro-background-dark);
+    --sl-color-neutral-100: var(--micro-panel-color);
     --sl-color-neutral-700: white;
     --sl-color-neutral-1000: white;
 }
