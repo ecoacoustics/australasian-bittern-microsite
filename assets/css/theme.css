@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css");
 
 :root {
     /* Fonts */
@@ -37,11 +36,45 @@
     --micro-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     --micro-box-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2);
     --micro-border-radius: 0.25rem;
+}
 
-    --sl-color-neutral-0: var(--micro-background-dark);
-    --sl-color-neutral-100: var(--micro-panel-color);
-    --sl-color-neutral-700: white;
-    --sl-color-neutral-1000: white;
+dialog {
+    color: white !important;
+}
+
+/*
+    We need to use !important because of an upstream css specificity bug with
+    the web components.
+    see: https://github.com/ecoacoustics/web-components/issues/373
+
+    If you want to customize the base "theme color" use the hugo.yaml file's
+    params.style.ThemeColor
+
+    You can see the list of possible theming variables in the web components
+    repository.
+    https://github.com/ecoacoustics/web-components/blob/main/src/helpers/themes/theming.css
+*/
+:root, oe-verification-grid {
+    --oe-theme-hue: var(--micro-theme-hue) !important;
+    --oe-theme-saturation: var(--micro-theme-saturation) !important;
+    --oe-theme-lightness: var(--micro-theme-lightness) !important;
+
+    --oe-font-color: var(--micro-font-color) !important;
+    --oe-background-color: var(--micro-background-light) !important;
+
+    --oe-border-rounding: var(--micro-border-radius);
+
+    /*
+        TODO: Remove this panel color override once new web components styling
+        is merged
+        https://github.com/ecoacoustics/web-components/pull/376
+    */
+    --oe-panel-color: var(--micro-background-dark) !important;
+
+    --sl-color-neutral-0: var(--micro-background-dark) !important;
+    --sl-color-neutral-100: var(--micro-background-light) !important;
+    --sl-color-neutral-700: white !important;
+    --sl-color-neutral-1000: white !important;
 }
 
 #home-page {
