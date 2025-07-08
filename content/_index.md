@@ -1,7 +1,6 @@
 +++
 title = "Home"
 date = 2023-01-01T08:00:00-07:00
-draft = false
 +++
 
 <!--
@@ -22,14 +21,15 @@ title="Can you hear an Australasian Bittern?">}}
 
 {{< section/call-to-action >}}
 The Australasian Bittern is a threatened species that are difficult to find and
-identify due to their natural camouflage into wetland environments. Our team
-aims to track and identify the Australasian Bittern's distinct calls.
+identify due to their natural camouflage into wetland environments. Our mission
+is to track and identify the Australasian Bittern's distinct calls through novel
+ecoacoustic research.
 {{< /section/call-to-action >}}
 
 {{< section/image-column
 image="images/bittern.jpg"
 alt="Australasian Bittern"
-caption=""
+caption="Image: Ken Crawley, macaulaylibrary.org/asset/105801701"
 imagePosition="left" >}}
 
 <div class="progress-container">
@@ -77,8 +77,8 @@ acoustic and motion-activated camera monitoring. She has worked extensively in
 the field as a ranger, field ecologist and environmental educator with
 nature-based tourism.
 
-<sl-button href="https://www.csu.edu.au/research/ilws/team/profiles/members/elizabeth-znidersic">
-    See Profile
+<sl-button slot="footer" href="https://www.csu.edu.au/research/ilws/team/profiles/members/elizabeth-znidersic" target="_blank">
+    See Full Bio
 </sl-button>
 {{< /card>}}
 
@@ -96,8 +96,8 @@ recordings of the environment, in particular, building recognizers for species
 of interest, extracting acoustic indices to aid navigation and visualisation.
 He is currently submerged in the sounds of wetlands.
 
-<sl-button href="https://www.csu.edu.au/research/ilws/team/research-members">
-    See Profile
+<sl-button slot="footer" href="https://www.csu.edu.au/research/ilws/team/research-members" target="_blank">
+    See Full Bio
 </sl-button>
 {{< /card >}}
 
@@ -115,8 +115,8 @@ abundance; theoretical advances; empirical studies based on previously published
 data; & synthetic reviews consolidating existing information and proposing new
 hypotheses.
 
-<sl-button href="https://www.csu.edu.au/research/ilws/team/profiles/members/david-watson">
-    See Profile
+<sl-button slot="footer" href="https://www.csu.edu.au/research/ilws/team/profiles/members/david-watson" target="_blank">
+    See Full Bio
 </sl-button>
 {{< /card >}}
 
