@@ -19,6 +19,8 @@ title="Can you hear an Australasian Bittern?">}}
 </a>
 {{< /section/hero >}}
 
+{{< fullbleed class="bittern-section section-1" >}}
+
 {{< section/call-to-action >}}
 The Australasian Bittern is a threatened species that are difficult to find and
 identify due to their natural camouflage into wetland environments. Our mission
@@ -59,7 +61,11 @@ imagePosition="left" >}}
 
 {{< /section/image-column >}}
 
-## Meet the Team
+{{< /fullbleed >}}
+
+{{< fullbleed class="bittern-section section-2" >}}
+
+<h3 id="meet-the-team">Meet the Team</h3>
 
 {{< section/cards >}}
 
@@ -121,3 +127,5 @@ hypotheses.
 {{< /card >}}
 
 {{< /section/cards >}}
+
+{{< /fullbleed >}}
