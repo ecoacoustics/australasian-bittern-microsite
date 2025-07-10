@@ -19,7 +19,7 @@ title="Can you hear an Australasian Bittern?">}}
 </a>
 {{< /section/hero >}}
 
-{{< fullbleed class="bittern-section section-1" >}}
+{{< section class="section-1" >}}
 
 {{< section/call-to-action >}}
 The Australasian Bittern is a threatened species that are difficult to find and
@@ -61,11 +61,11 @@ imagePosition="left" >}}
 
 {{< /section/image-column >}}
 
-{{< /fullbleed >}}
+{{< /section >}}
 
-{{< fullbleed class="bittern-section section-2" >}}
+{{< section class="section-2" >}}
 
-<h3 id="meet-the-team">Meet the Team</h3>
+<h2 id="meet-the-team">Meet the Team</h2>
 
 {{< section/cards >}}
 
@@ -128,4 +128,4 @@ hypotheses.
 
 {{< /section/cards >}}
 
-{{< /fullbleed >}}
+{{< /section >}}

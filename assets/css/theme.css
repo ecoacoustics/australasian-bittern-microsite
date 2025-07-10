@@ -8,13 +8,13 @@
     --micro-font-color-light: #fff;
     --micro-font-color-toned: #e8e720;
     --micro-inverse-color: #000;
-    --micro-heading-color: #fff;
-    --micro-footer-color: var(--sl-color-primary-950);
+    --micro-heading-color: var(--micro-theme-color);
+    --micro-footer-color: #a1c920;
 
     /* Backgrounds */
-    --micro-background-light: rgb(116, 116, 116);
-    --micro-background-dark: #58585a;
-    --micro-panel-color: var(--micro-background-color);
+    --micro-background-light: rgb(88, 88, 90);
+    --micro-background-dark: rgb(45, 45, 46);
+    --micro-panel-color: rgb(70, 70, 70);
 
     /* Font Sizes */
     --micro-font-size-xsmall: 0.8rem;
@@ -71,11 +71,7 @@
     /* Disable the box shadow */
     --oe-box-shadow: none;
 
-    /*
-        TODO: Remove this panel color override once new web components styling
-        is merged
-        https://github.com/ecoacoustics/web-components/pull/376
-    */
+    --oe-background-color: var(--micro-background-dark) !important;
     --oe-panel-color: var(--micro-background-dark) !important;
 
     --sl-color-neutral-0: var(--micro-background-dark) !important;
@@ -90,13 +86,43 @@
     }
 }
 
-.bittern-section {
+.page-section {
+    padding-top: 2rem !important;
+    padding-bottom: 300px !important;
+
+    /*
+        Each section has their own svg because it's not possible to pass through
+        css variables to ::before and ::after pseudo elements because they do
+        not exist in the DOM.
+
+        https://discourse.wicg.io/t/css-variables-and-before-after-content/1750
+    */
+    &::after {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.oe-hero {
+    &::after {
+        content: url("/separator1.svg");
+    }
 }
 
 .section-1 {
-    background-color: #58585a;
+    background-color: var(--micro-background-light);
+
+    &::after {
+        content: url("/separator2.svg");
+    }
 }
 
 .section-2 {
-    background-color: #2d2d2e;
+    background-color: var(--micro-background-dark);
+
+    &::after {
+        content: url("/separator3.svg");
+    }
 }
