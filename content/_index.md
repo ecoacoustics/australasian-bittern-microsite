@@ -12,12 +12,15 @@ date = 2023-01-01T08:00:00-07:00
 -->
 
 {{< section/hero
+class="section-1"
 caption=""
 title="Can you hear an Australasian Bittern?">}}
 <a href="https://eavesdroppingonwetlandbirds.com.au/" target="_blank">
     <img src="project-logo.png" style="max-width: 100%">
 </a>
 {{< /section/hero >}}
+
+{{< section class="section-2" >}}
 
 {{< section/call-to-action >}}
 The Australasian Bittern is a threatened species that are difficult to find and
@@ -34,7 +37,7 @@ imagePosition="left" >}}
 
 <div class="progress-container">
     <div>
-        <h2>Research Objectives</h3>
+        <h2>Research Objectives</h2>
         <p>
             By helping identify Bittern calls, you're contributing to a growing
             library of acoustic data that:
@@ -59,7 +62,11 @@ imagePosition="left" >}}
 
 {{< /section/image-column >}}
 
-## Meet the Team
+{{< /section >}}
+
+{{< section class="section-3" >}}
+
+<h2 id="meet-the-team">Meet the Team</h2>
 
 {{< section/cards >}}
 
@@ -121,3 +128,5 @@ hypotheses.
 {{< /card >}}
 
 {{< /section/cards >}}
+
+{{< /section >}}
