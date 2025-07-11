@@ -101,8 +101,28 @@
     &::after {
         display: block;
         height: auto;
+        width: 100%;
 
         grid-column: fullbleed;
+
+        /*
+            We cannot set the svg as the "content" because (for some reason)
+            Chrome doesn't correctly apply the grid-column-end subgrid
+            positioning.
+
+            This bug only exists in Chrome. I have checked and the bug does not
+            exist in Firefox or Webkit.
+
+            Therefore, to get around what I suspect to be a Chrome bug, I
+            position the ::after pseudo element to the subgrid, the set a
+            background-image that covers the container.
+
+            Because we cannot use the svg's height to determine flow, I have to
+            explicitly set the aspect ratio of the svg, so that he height can be
+            determined from the width of the ::after box height.
+        */
+        aspect-ratio: 4 / 1;
+        background-size: cover;
 
         /*
             I _think_ that the svg starts at 6px from the bottom.
@@ -118,7 +138,8 @@
     }
 
     &::after {
-        content: url("/separator1.svg");
+        content: "";
+        background-image: url("/separator1.svg");
     }
 }
 
@@ -126,7 +147,8 @@
     background-color: var(--micro-background-light);
 
     &::after {
-        content: url("/separator2.svg");
+        content: "";
+        background-image: url("/separator2.svg");
     }
 }
 
@@ -134,6 +156,7 @@
     background-color: var(--micro-background-dark);
 
     &::after {
-        content: url("/separator3.svg");
+        content: "";
+        background-image: url("/separator3.svg");
     }
 }
