@@ -88,7 +88,6 @@
 
 .page-section {
     padding-top: 2rem !important;
-    padding-bottom: 300px !important;
 
     /*
         Each section has their own svg because it's not possible to pass through
@@ -98,20 +97,23 @@
         https://discourse.wicg.io/t/css-variables-and-before-after-content/1750
     */
     &::after {
-        position: absolute;
-        bottom: 0px;
+        display: block;
         width: 100%;
-        height: 300px;
+        height: auto;
+
+        grid-column: fullbleed;
+
+        margin-bottom: -6px;
     }
 }
 
-.oe-hero {
+.section-1 {
     &::after {
         content: url("/separator1.svg");
     }
 }
 
-.section-1 {
+.section-2 {
     background-color: var(--micro-background-light);
 
     &::after {
@@ -119,7 +121,7 @@
     }
 }
 
-.section-2 {
+.section-3 {
     background-color: var(--micro-background-dark);
 
     &::after {
