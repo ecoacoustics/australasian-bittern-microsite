@@ -9,7 +9,9 @@
     --micro-font-color-toned: #e8e720;
     --micro-inverse-color: #000;
     --micro-heading-color: var(--micro-theme-color);
-    --micro-footer-color: #a1c920;
+
+    --micro-footer-background-color: #a1c920;
+    --micro-footer-font-color: black;
 
     /* Backgrounds */
     --micro-background-light: rgb(88, 88, 90);
@@ -98,16 +100,23 @@
     */
     &::after {
         display: block;
-        width: 100%;
         height: auto;
 
         grid-column: fullbleed;
 
+        /*
+            I _think_ that the svg starts at 6px from the bottom.
+            This means that the svg is never flush with the bottom of the
+        */
         margin-bottom: -6px;
     }
 }
 
 .section-1 {
+    & > .hero-content-container {
+        min-height: 600px;
+    }
+
     &::after {
         content: url("/separator1.svg");
     }
