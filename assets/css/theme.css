@@ -82,6 +82,10 @@
     --sl-color-neutral-1000: white !important;
 }
 
+h2 {
+    color: var(--micro-heading-color);
+}
+
 #home-page {
     #meet-the-team {
         font-weight: bold;
@@ -121,7 +125,7 @@
             explicitly set the aspect ratio of the svg, so that he height can be
             determined from the width of the ::after box height.
         */
-        aspect-ratio: 4 / 1;
+        aspect-ratio: 300 / 53;
         background-size: cover;
 
         /*
@@ -160,3 +164,35 @@
         background-image: url("/separator3.svg");
     }
 }
+
+/*
+    The original host website has an animation where the navigation bar's
+    padding is removed when the user starts scrolling.
+
+    However, after implementing it, I realized that it looks a bit hacky.
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
+*/
+/* 
+.oe-navigation {
+    animation-name: navShrinkAnimation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timeline: scroll(root);
+
+    animation-range: 1px 600px;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navShrinkAnimation {
+  from {
+    padding-top: var(--micro-padding-medium);
+    padding-bottom: var(--micro-padding-medium);
+  }
+
+  to {
+    padding-top: var(--micro-padding-small);
+    padding-bottom: var(--micro-padding-small);
+  }
+}
+*/
