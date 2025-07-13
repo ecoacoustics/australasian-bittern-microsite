@@ -8,13 +8,15 @@
     --micro-font-color-light: #fff;
     --micro-font-color-toned: #e8e720;
     --micro-inverse-color: #000;
-    --micro-heading-color: #fff;
-    --micro-footer-color: var(--sl-color-primary-950);
+    --micro-heading-color: var(--micro-theme-color);
+
+    --micro-footer-background-color: #a1c920;
+    --micro-footer-font-color: black;
 
     /* Backgrounds */
-    --micro-background-light: rgb(116, 116, 116);
-    --micro-background-dark: #58585a;
-    --micro-panel-color: var(--micro-background-color);
+    --micro-background-light: rgb(88, 88, 90);
+    --micro-background-dark: rgb(45, 45, 46);
+    --micro-panel-color: rgb(70, 70, 70);
 
     /* Font Sizes */
     --micro-font-size-xsmall: 0.8rem;
@@ -28,6 +30,13 @@
     --micro-padding-medium: 1rem;
     --micro-padding-large: 2rem;
     --micro-padding-xlarge: 2.5rem;
+
+    /*
+        The minimum amount of space either side of the main (non-fullbleed)
+        content.
+        This is the amount of padding around the main content on mobile.
+    */
+    --micro-gutter-size: 0.75rem;
 
     /* Other */
     --micro-navbar-height: 4rem;
@@ -64,11 +73,7 @@
     /* Disable the box shadow */
     --oe-box-shadow: none;
 
-    /*
-        TODO: Remove this panel color override once new web components styling
-        is merged
-        https://github.com/ecoacoustics/web-components/pull/376
-    */
+    --oe-background-color: var(--micro-background-dark) !important;
     --oe-panel-color: var(--micro-background-dark) !important;
 
     --sl-color-neutral-0: var(--micro-background-dark) !important;
@@ -77,8 +82,117 @@
     --sl-color-neutral-1000: white !important;
 }
 
+h2 {
+    color: var(--micro-heading-color);
+}
+
 #home-page {
     #meet-the-team {
         font-weight: bold;
     }
 }
+
+.page-section {
+    padding-top: 2rem !important;
+
+    /*
+        Each section has their own svg because it's not possible to pass through
+        css variables to ::before and ::after pseudo elements because they do
+        not exist in the DOM.
+
+        https://discourse.wicg.io/t/css-variables-and-before-after-content/1750
+    */
+    &::after {
+        display: block;
+        height: auto;
+        width: 100%;
+
+        grid-column: fullbleed;
+
+        /*
+            We cannot set the svg as the "content" because (for some reason)
+            Chrome doesn't correctly apply the grid-column-end subgrid
+            positioning.
+
+            This bug only exists in Chrome. I have checked and the bug does not
+            exist in Firefox or Webkit.
+
+            Therefore, to get around what I suspect to be a Chrome bug, I
+            position the ::after pseudo element to the subgrid, the set a
+            background-image that covers the container.
+
+            Because we cannot use the svg's height to determine flow, I have to
+            explicitly set the aspect ratio of the svg, so that he height can be
+            determined from the width of the ::after box height.
+        */
+        aspect-ratio: 300 / 53;
+        background-size: cover;
+
+        /*
+            I _think_ that the svg starts at 6px from the bottom.
+            This means that the svg is never flush with the bottom of the
+        */
+        margin-bottom: -6px;
+    }
+}
+
+.section-1 {
+    & > .hero-content-container {
+        min-height: 600px;
+    }
+
+    &::after {
+        content: "";
+        background-image: url("/separator1.svg");
+    }
+}
+
+.section-2 {
+    background-color: var(--micro-background-light);
+
+    &::after {
+        content: "";
+        background-image: url("/separator2.svg");
+    }
+}
+
+.section-3 {
+    background-color: var(--micro-background-dark);
+
+    &::after {
+        content: "";
+        background-image: url("/separator3.svg");
+    }
+}
+
+/*
+    The original host website has an animation where the navigation bar's
+    padding is removed when the user starts scrolling.
+
+    However, after implementing it, I realized that it looks a bit hacky.
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
+*/
+/* 
+.oe-navigation {
+    animation-name: navShrinkAnimation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timeline: scroll(root);
+
+    animation-range: 1px 600px;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navShrinkAnimation {
+  from {
+    padding-top: var(--micro-padding-medium);
+    padding-bottom: var(--micro-padding-medium);
+  }
+
+  to {
+    padding-top: var(--micro-padding-small);
+    padding-bottom: var(--micro-padding-small);
+  }
+}
+*/
