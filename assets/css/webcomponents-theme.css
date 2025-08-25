@@ -5,6 +5,8 @@
 
     --oe-font-color: var(--micro-font-color) !important;
     --oe-background-color: var(--micro-background-light) !important;
+    --oe-selected-color: rgba(255, 255, 255, 0.1) !important;
+    --oe-border-color: hsl(var(--oe-theme-hue), calc(var(--oe-theme-saturation) - 30%), calc(var(--oe-theme-lightness) - 5%)) !important;
 
     --oe-info-bg-color: transparent !important;
 
