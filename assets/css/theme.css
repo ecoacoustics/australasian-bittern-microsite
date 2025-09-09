@@ -10,6 +10,9 @@
     --micro-inverse-color: #000;
     --micro-heading-color: var(--micro-theme-color);
 
+    --micro-nav-background-color: var(--micro-background-light);
+    --micro-nav-font-color: var(--micro-font-color);
+
     --micro-footer-background-color: #a1c920;
     --micro-footer-font-color: black;
 
