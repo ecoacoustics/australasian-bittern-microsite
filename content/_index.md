@@ -12,7 +12,7 @@ date = 2023-01-01T08:00:00-07:00
 -->
 
 {{< section/hero
-class="section-1"
+class="wave-1 wave-color-light"
 caption=""
 title="Can you hear an Australasian Bittern?">}}
 <a href="https://eavesdroppingonwetlandbirds.com.au/" target="_blank">
@@ -20,15 +20,14 @@ title="Can you hear an Australasian Bittern?">}}
 </a>
 {{< /section/hero >}}
 
-{{< section class="section-2" >}}
-
-{{< section/call-to-action >}}
+{{< section class="oe-call-to-action" >}}
 The Australasian Bittern is a threatened species that are difficult to find and
 identify due to their natural camouflage into wetland environments. Our mission
 is to track and identify the Australasian Bittern's distinct calls through novel
 ecoacoustic research.
-{{< /section/call-to-action >}}
+{{< /section >}}
 
+{{< section class="wave-2 wave-color-dark" >}}
 {{< section/image-column
 image="images/bittern.jpg"
 alt="Australasian Bittern"
@@ -64,7 +63,7 @@ imagePosition="left" >}}
 
 {{< /section >}}
 
-{{< section class="section-3" >}}
+{{< section class="section-color-dark wave-3 wave-color-white" >}}
 
 <h2 id="meet-the-team">Meet the Team</h2>
 
@@ -130,3 +129,5 @@ hypotheses.
 {{< /section/cards >}}
 
 {{< /section >}}
+
+{{< sponsors class="fullbleed section-color-white wave-1 wave-color-footer" />}}
