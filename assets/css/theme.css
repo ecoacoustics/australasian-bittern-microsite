@@ -141,6 +141,11 @@ h2 {
   }
 }
 
+.hero-content-container {
+  /* show off the hero a little more */
+  min-height: 600px;
+}
+
 .wave-1::after {
   content: "";
   mask: url("/separator1.svg") 0 0/150% 100%;
