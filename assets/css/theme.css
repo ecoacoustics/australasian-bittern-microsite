@@ -1,190 +1,220 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
-    /* Fonts */
-    --micro-heading-font: 'Inter', sans-serif;
-    --micro-body-font: 'Inter', sans-serif;
-    --micro-font-color: #fff;
-    --micro-font-color-light: #fff;
-    --micro-font-color-toned: #e8e720;
-    --micro-inverse-color: #000;
-    --micro-heading-color: var(--micro-theme-color);
+  /* Fonts */
+  --micro-heading-font: "Inter", sans-serif;
+  --micro-body-font: "Inter", sans-serif;
+  --micro-font-color: #fff;
+  --micro-font-color-light: #fff;
+  --micro-font-color-toned: #e8e720;
+  --micro-inverse-color: #000;
+  --micro-heading-color: var(--micro-theme-color);
 
-    --micro-nav-background-color: var(--micro-background-light);
-    --micro-nav-font-color: var(--micro-font-color);
+  --micro-nav-background-color: var(--micro-background-light);
+  --micro-nav-font-color: var(--micro-font-color);
 
-    --micro-footer-background-color: #a1c920;
-    --micro-footer-font-color: black;
+  --micro-footer-background-color: #a1c920;
+  --micro-footer-font-color: black;
 
-    /* Backgrounds */
-    --micro-background-light: rgb(88, 88, 90);
-    --micro-background-dark: rgb(45, 45, 46);
-    --micro-panel-color: rgb(70, 70, 70);
+  /* Backgrounds */
+  --micro-background-light: rgb(88, 88, 90);
+  --micro-background-dark: rgb(45, 45, 46);
+  --micro-panel-color: rgb(70, 70, 70);
 
-    /* Font Sizes */
-    --micro-font-size-xsmall: 0.8rem;
-    --micro-font-size-small: 1rem;
-    --micro-font-size-medium: 1.5rem;
-    --micro-font-size-larger: 2.25rem;
-    --micro-font-size-xlarge: 4.5rem;
+  /* Font Sizes */
+  --micro-font-size-xsmall: 0.8rem;
+  --micro-font-size-small: 1rem;
+  --micro-font-size-medium: 1.5rem;
+  --micro-font-size-larger: 2.25rem;
+  --micro-font-size-xlarge: 4.5rem;
 
-    /* Paddings */
-    --micro-padding-small: 0.5rem;
-    --micro-padding-medium: 1rem;
-    --micro-padding-large: 2rem;
-    --micro-padding-xlarge: 2.5rem;
+  /* Paddings */
+  --micro-padding-small: 0.5rem;
+  --micro-padding-medium: 1rem;
+  --micro-padding-large: 2rem;
+  --micro-padding-xlarge: 2.5rem;
 
-    /*
+  /*
         The minimum amount of space either side of the main (non-fullbleed)
         content.
         This is the amount of padding around the main content on mobile.
     */
-    --micro-gutter-size: 0.75rem;
+  --micro-gutter-size: 0.75rem;
 
-    /* Other */
-    --micro-navbar-height: 4rem;
-    --micro-panel-opacity: 0.8;
-    --micro-transition-duration: 0.3s;
-    --micro-transition-timing: ease-in-out;
-    --micro-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --micro-box-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2);
-    --micro-border-radius: 0.25rem;
+  /* Other */
+  --micro-navbar-height: 4rem;
+  --micro-navbar-padding: var(--micro-padding-medium);
+  --micro-panel-opacity: 0.8;
+  --micro-transition-duration: 0.3s;
+  --micro-transition-timing: ease-in-out;
+  --micro-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --micro-box-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --micro-border-radius: 0.25rem;
 }
 
 /*
-    We need to use !important because of an upstream css specificity bug with
-    the web components.
-    see: https://github.com/ecoacoustics/web-components/issues/373
+  We need to use !important because of an upstream css specificity bug with
+  the web components.
+  see: https://github.com/ecoacoustics/web-components/issues/373
 
-    If you want to customize the base "theme color" use the hugo.yaml file's
-    params.style.ThemeColor
+  If you want to customize the base "theme color" use the hugo.yaml file's
+  params.style.ThemeColor
 
-    You can see the list of possible theming variables in the web components
-    repository.
-    https://github.com/ecoacoustics/web-components/blob/main/src/helpers/themes/theming.css
+  You can see the list of possible theming variables in the web components
+  repository.
+  https://github.com/ecoacoustics/web-components/blob/main/src/helpers/themes/theming.css
 */
-:root, oe-verification-grid {
-    --oe-theme-hue: var(--micro-theme-hue) !important;
-    --oe-theme-saturation: var(--micro-theme-saturation) !important;
-    --oe-theme-lightness: var(--micro-theme-lightness) !important;
+:root,
+oe-verification-grid {
+  --oe-theme-hue: var(--micro-theme-hue) !important;
+  --oe-theme-saturation: var(--micro-theme-saturation) !important;
+  --oe-theme-lightness: var(--micro-theme-lightness) !important;
 
-    --oe-font-color: var(--micro-font-color) !important;
-    --oe-background-color: var(--micro-background-light) !important;
+  --oe-font-color: var(--micro-font-color) !important;
+  --oe-background-color: var(--micro-background-light) !important;
 
-    --oe-border-rounding: var(--micro-border-radius);
+  --oe-border-rounding: var(--micro-border-radius);
 
-    /* Disable the box shadow */
-    --oe-box-shadow: none;
+  /* Disable the box shadow */
+  --oe-box-shadow: none;
 
-    --oe-background-color: var(--micro-background-dark) !important;
-    --oe-panel-color: var(--micro-background-dark) !important;
+  --oe-background-color: var(--micro-background-dark) !important;
+  --oe-panel-color: var(--micro-background-dark) !important;
 
-    --sl-color-neutral-0: var(--micro-background-dark) !important;
-    --sl-color-neutral-100: var(--micro-background-light) !important;
-    --sl-color-neutral-700: white !important;
-    --sl-color-neutral-1000: white !important;
+  --sl-color-neutral-0: var(--micro-background-dark) !important;
+  --sl-color-neutral-100: var(--micro-background-light) !important;
+  --sl-color-neutral-700: white !important;
+  --sl-color-neutral-1000: white !important;
 }
 
 h2 {
-    color: var(--micro-heading-color);
+  color: var(--micro-heading-color);
 }
 
 #home-page {
-    #meet-the-team {
-        font-weight: bold;
-    }
+  #meet-the-team {
+    font-weight: bold;
+  }
 }
 
 .page-section {
-    padding-top: 2rem !important;
+  padding-top: 2rem !important;
+
+  /*
+    Each section has their own svg because it's not possible to pass through
+    css variables to ::before and ::after pseudo elements because they do
+    not exist in the DOM.
+
+    https://discourse.wicg.io/t/css-variables-and-before-after-content/1750
+  */
+  &::after {
+    display: block;
+    height: auto;
+    width: 100%;
+
+    grid-column: fullbleed;
 
     /*
-        Each section has their own svg because it's not possible to pass through
-        css variables to ::before and ::after pseudo elements because they do
-        not exist in the DOM.
+      We cannot set the svg as the "content" because (for some reason)
+      Chrome doesn't correctly apply the grid-column-end subgrid
+      positioning.
 
-        https://discourse.wicg.io/t/css-variables-and-before-after-content/1750
+      This bug only exists in Chrome. I have checked and the bug does not
+      exist in Firefox or Webkit.
+
+      Therefore, to get around what I suspect to be a Chrome bug, I
+      position the ::after pseudo element to the subgrid, the set a
+      background-image that covers the container.
+
+      Because we cannot use the svg's height to determine flow, I have to
+      explicitly set the aspect ratio of the svg, so that he height can be
+      determined from the width of the ::after box height.
     */
-    &::after {
-        display: block;
-        height: auto;
-        width: 100%;
+    aspect-ratio: 300 / 53;
+    background-size: cover;
 
-        grid-column: fullbleed;
-
-        /*
-            We cannot set the svg as the "content" because (for some reason)
-            Chrome doesn't correctly apply the grid-column-end subgrid
-            positioning.
-
-            This bug only exists in Chrome. I have checked and the bug does not
-            exist in Firefox or Webkit.
-
-            Therefore, to get around what I suspect to be a Chrome bug, I
-            position the ::after pseudo element to the subgrid, the set a
-            background-image that covers the container.
-
-            Because we cannot use the svg's height to determine flow, I have to
-            explicitly set the aspect ratio of the svg, so that he height can be
-            determined from the width of the ::after box height.
-        */
-        aspect-ratio: 300 / 53;
-        background-size: cover;
-
-        /*
+    /*
             I _think_ that the svg starts at 6px from the bottom.
             This means that the svg is never flush with the bottom of the
         */
-        margin-bottom: -6px;
-    }
+    margin-bottom: -6px;
+  }
 }
 
-.section-1 {
-    & > .hero-content-container {
-        min-height: 600px;
-    }
-
-    &::after {
-        content: "";
-        background-image: url("/separator1.svg");
-    }
+.hero-content-container {
+  /* show off the hero a little more */
+  min-height: 600px;
 }
 
-.section-2 {
-    background-color: var(--micro-background-light);
-
-    &::after {
-        content: "";
-        background-image: url("/separator2.svg");
-    }
+.wave-1::after {
+  content: "";
+  mask: url("/separator1.svg") 0 0/150% 100%;
 }
 
-.section-3 {
-    background-color: var(--micro-background-dark);
+.wave-2::after {
+  content: "";
+  mask: url("/separator1.svg") 50% 0/150% 100%;
+}
 
-    &::after {
-        content: "";
-        background-image: url("/separator3.svg");
-    }
+.wave-3::after {
+  content: "";
+  mask: url("/separator1.svg") 100% 0/150% 100%;
+}
+
+.wave-color-light::after {
+  background-color: var(--micro-background-light);
+}
+
+.wave-color-dark::after {
+  background-color: var(--micro-background-dark);
+}
+
+.wave-color-white::after {
+  background-color: white;
+}
+
+.wave-color-footer::after {
+  background-color: var(--micro-footer-background-color);
+}
+
+.section-color-dark {
+  background-color: var(--micro-background-dark);
+}
+
+.section-color-light {
+  background-color: var(--micro-background-light);
+}
+
+.section-color-footer {
+  background-color: var(--micro-footer-background-color);
+}
+
+.section-color-white {
+  background-color: white;
+  color: var(--micro-inverse-color);
+
+  & a {
+    color: var(--sl-color-primary-800);
+  }
 }
 
 /*
-    The original host website has an animation where the navigation bar's
-    padding is removed when the user starts scrolling.
+  The original host website has an animation where the navigation bar's
+  padding is removed when the user starts scrolling.
 
-    However, after implementing it, I realized that it looks a bit hacky.
+  However, after implementing it, I realized that it looks a bit hacky.
 
-    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
 */
 /* 
 .oe-navigation {
-    animation-name: navShrinkAnimation;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-timeline: scroll(root);
+  animation-name: navShrinkAnimation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timeline: scroll(root);
 
-    animation-range: 1px 600px;
-    animation-fill-mode: forwards;
+  animation-range: 1px 600px;
+  animation-fill-mode: forwards;
 }
 
 @keyframes navShrinkAnimation {
