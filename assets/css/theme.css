@@ -53,16 +53,16 @@
 }
 
 /*
-    We need to use !important because of an upstream css specificity bug with
-    the web components.
-    see: https://github.com/ecoacoustics/web-components/issues/373
+  We need to use !important because of an upstream css specificity bug with
+  the web components.
+  see: https://github.com/ecoacoustics/web-components/issues/373
 
-    If you want to customize the base "theme color" use the hugo.yaml file's
-    params.style.ThemeColor
+  If you want to customize the base "theme color" use the hugo.yaml file's
+  params.style.ThemeColor
 
-    You can see the list of possible theming variables in the web components
-    repository.
-    https://github.com/ecoacoustics/web-components/blob/main/src/helpers/themes/theming.css
+  You can see the list of possible theming variables in the web components
+  repository.
+  https://github.com/ecoacoustics/web-components/blob/main/src/helpers/themes/theming.css
 */
 :root,
 oe-verification-grid {
@@ -101,12 +101,12 @@ h2 {
   padding-top: 2rem !important;
 
   /*
-        Each section has their own svg because it's not possible to pass through
-        css variables to ::before and ::after pseudo elements because they do
-        not exist in the DOM.
+    Each section has their own svg because it's not possible to pass through
+    css variables to ::before and ::after pseudo elements because they do
+    not exist in the DOM.
 
-        https://discourse.wicg.io/t/css-variables-and-before-after-content/1750
-    */
+    https://discourse.wicg.io/t/css-variables-and-before-after-content/1750
+  */
   &::after {
     display: block;
     height: auto;
@@ -115,21 +115,21 @@ h2 {
     grid-column: fullbleed;
 
     /*
-            We cannot set the svg as the "content" because (for some reason)
-            Chrome doesn't correctly apply the grid-column-end subgrid
-            positioning.
+      We cannot set the svg as the "content" because (for some reason)
+      Chrome doesn't correctly apply the grid-column-end subgrid
+      positioning.
 
-            This bug only exists in Chrome. I have checked and the bug does not
-            exist in Firefox or Webkit.
+      This bug only exists in Chrome. I have checked and the bug does not
+      exist in Firefox or Webkit.
 
-            Therefore, to get around what I suspect to be a Chrome bug, I
-            position the ::after pseudo element to the subgrid, the set a
-            background-image that covers the container.
+      Therefore, to get around what I suspect to be a Chrome bug, I
+      position the ::after pseudo element to the subgrid, the set a
+      background-image that covers the container.
 
-            Because we cannot use the svg's height to determine flow, I have to
-            explicitly set the aspect ratio of the svg, so that he height can be
-            determined from the width of the ::after box height.
-        */
+      Because we cannot use the svg's height to determine flow, I have to
+      explicitly set the aspect ratio of the svg, so that he height can be
+      determined from the width of the ::after box height.
+    */
     aspect-ratio: 300 / 53;
     background-size: cover;
 
@@ -200,22 +200,22 @@ h2 {
 }
 
 /*
-    The original host website has an animation where the navigation bar's
-    padding is removed when the user starts scrolling.
+  The original host website has an animation where the navigation bar's
+  padding is removed when the user starts scrolling.
 
-    However, after implementing it, I realized that it looks a bit hacky.
+  However, after implementing it, I realized that it looks a bit hacky.
 
-    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
 */
 /* 
 .oe-navigation {
-    animation-name: navShrinkAnimation;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-timeline: scroll(root);
+  animation-name: navShrinkAnimation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timeline: scroll(root);
 
-    animation-range: 1px 600px;
-    animation-fill-mode: forwards;
+  animation-range: 1px 600px;
+  animation-fill-mode: forwards;
 }
 
 @keyframes navShrinkAnimation {
