@@ -141,25 +141,19 @@ h2 {
   }
 }
 
-.wave-1 {
-  &::after {
-    content: "";
-    mask: url("/separator1.svg") 0 0/150% 100%;
-  }
+.wave-1::after {
+  content: "";
+  mask: url("/separator1.svg") 0 0/150% 100%;
 }
 
-.wave-2 {
-  &::after {
-    content: "";
-    mask: url("/separator1.svg") 50% 0/150% 100%;
-  }
+.wave-2::after {
+  content: "";
+  mask: url("/separator1.svg") 50% 0/150% 100%;
 }
 
-.wave-3 {
-  &::after {
-    content: "";
-    mask: url("/separator1.svg") 100% 0/150% 100%;
-  }
+.wave-3::after {
+  content: "";
+  mask: url("/separator1.svg") 100% 0/150% 100%;
 }
 
 .wave-color-light::after {
