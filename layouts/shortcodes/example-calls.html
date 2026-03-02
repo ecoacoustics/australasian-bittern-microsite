@@ -116,13 +116,17 @@
 }
 
 .card-host {
-    sl-card {
-        display: block;
-        height: 100%;
+    & sl-card {
+      display: block;
+      height: 100%;
     }
 
-    .card-body {
-        min-width: 370px;
+    & .card-body {
+      min-width: 370px;
+    }
+
+    & oe-spectrogram {
+      height: 512px;
     }
 }
 
