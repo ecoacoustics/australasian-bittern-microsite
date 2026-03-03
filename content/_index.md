@@ -61,6 +61,8 @@ imagePosition="left" >}}
 
 {{< /section/image-column >}}
 
+{{< example-calls >}}
+
 {{< /section >}}
 
 {{< section class="section-color-dark wave-3 wave-color-white" >}}
