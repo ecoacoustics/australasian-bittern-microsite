@@ -39,7 +39,7 @@ params:
   workbenchHost: https://ecosounds.org
   heroImage: images/hero_image.jpg
   campaigns:
-    - name: "Powerful Owl"
+    - name: "Australasian Bittern"
       filters:
         filter:
           and:
@@ -48,6 +48,7 @@ params:
                   - 1068
             - projects.id:
                 eq: 1131
+
   style:
     roundedButtons: false
     # Theme colors are defined using "hsl" (hue, saturation, lightness).
