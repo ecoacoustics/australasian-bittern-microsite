@@ -162,4 +162,11 @@ hypotheses.
 
 {{< /section >}}
 
+<style>
+#home-page .oe-cards {
+  font-size: 1.05em;
+}
+</style>
+
+
 {{< sponsors class="fullbleed section-color-white wave-1 wave-color-footer" />}}
