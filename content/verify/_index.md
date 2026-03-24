@@ -2,7 +2,21 @@
 title = "Can you hear an Australasian Bittern?"
 +++
 
-<oe-verification-grid data-campaign="Powerful Owl" id="verification-grid" grid-size="1" progress-bar-position="top">
+<oe-verification-grid data-campaign="Australasian Bittern" id="verification-grid" grid-size="1" progress-bar-position="top">
+    <template>
+        <div class="tile-spacing">
+            <oe-subject-tag></oe-subject-tag>
+            <oe-media-controls for="spectrogram"></oe-media-controls>
+        </div>
+        <oe-axes>
+        <oe-indicator>
+            <oe-spectrogram id="spectrogram" mel-scale window-size="4096" window-overlap="512" window-function="tukey"></oe-spectrogram>
+        </oe-indicator>
+        </oe-axes>
+        <div class="tile-block">
+            <oe-task-meter></oe-task-meter>
+        </div>
+    </template>
     <oe-verification verified="true" shortcut="y">Yes</oe-verification>
     <oe-verification verified="false" shortcut="n">No</oe-verification>
     <oe-verification verified="unsure" shortcut="u">Unsure</oe-verification>

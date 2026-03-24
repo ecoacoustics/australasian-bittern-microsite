@@ -11,14 +11,44 @@ date = 2023-01-01T08:00:00-07:00
     (eavesdroppingonwetlandbirds.com.au)
 -->
 
+<!-- 
+important: this title contains a unicode \u00A0 non-breaking space between the "Australasian" and "Bittern"
+-->
 {{< section/hero
 class="wave-1 wave-color-light"
 caption=""
-title="Can you hear an Australasian Bittern?">}}
+title="Can you hear an Australasian Bittern?">}}
 <a href="https://eavesdroppingonwetlandbirds.com.au/" target="_blank">
     <img src="project-logo.png" style="max-width: 100%">
 </a>
 {{< /section/hero >}}
+
+<style>
+#home-page .hero-content {
+    flex-direction: column-reverse;
+}
+
+#home-page .hero-content > * {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+#home-page .hero-content .slotted-hero-content img {
+    width: 60%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+#home-page .hero-content h1.oe-hero-title {
+    padding-top: 20px;
+    text-shadow:
+        4px 2px 3px rgba(0, 0, 0, 0.95),
+        0 0 25px rgba(0, 0, 0, 1),
+        0 0 15px rgba(0, 0, 0, 1);
+}
+
+</style>
 
 {{< section class="oe-call-to-action" >}}
 The Australasian Bittern is a threatened species that are difficult to find and
@@ -131,5 +161,12 @@ hypotheses.
 {{< /section/cards >}}
 
 {{< /section >}}
+
+<style>
+#home-page .oe-cards {
+  font-size: 1.05em;
+}
+</style>
+
 
 {{< sponsors class="fullbleed section-color-white wave-1 wave-color-footer" />}}
