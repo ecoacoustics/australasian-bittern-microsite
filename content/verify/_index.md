@@ -10,7 +10,7 @@ title = "Can you hear an Australasian Bittern?"
         </div>
         <oe-axes>
         <oe-indicator>
-            <oe-spectrogram id="spectrogram" mel-scale></oe-spectrogram>
+            <oe-spectrogram id="spectrogram" mel-scale window-size="4096" window-overlap="512" window-function="tukey"></oe-spectrogram>
         </oe-indicator>
         </oe-axes>
         <div class="tile-block">
