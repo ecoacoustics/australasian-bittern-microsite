@@ -10,6 +10,8 @@ server:
         Cross-Origin-Opener-Policy: same-origin
         Cross-Origin-Embedder-Policy: require-corp
         Cross-Origin-Resource-Policy: cross-origin
+        Content-Security-Policy-Report-Only: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' data: https://*.ecosounds.org https://*.acousticobservatory.org https://cdn.jsdelivr.net https://www.google-analytics.com; media-src 'self' https://*.ecosounds.org https://*.acousticobservatory.org; frame-src 'none'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';"
+
         ignoreLogs:
           - warning-goldmark-raw-html
 module:
@@ -35,9 +37,9 @@ menus:
     - name: Blog
       pageRef: https://eavesdroppingonwetlandbirds.com.au/category/blog/
 params:
-  apiHost: https://api.ecosounds.org
-  workbenchHost: https://ecosounds.org
-  heroImage: images/hero_image.jpg
+  api_host: https://api.ecosounds.org
+  workbench_host: https://ecosounds.org
+  hero_image: images/hero_image.jpg
   campaigns:
     - name: "Australasian Bittern"
       filters:
@@ -59,14 +61,14 @@ params:
       saturation: 82.1%
       lightness: 51.8%
     themeShades:
-      "50": 251 250 212
-      "100": 249 248 194
-      "200": 247 245 170
-      "300": 242 240 124
-      "400": 238 235 78
-      "500": 235 232 54
-      "600": 233 231 31
-      "700": 194 191 19
-      "800": 148 145 15
-      "900": 101 100 10
-      "950": 50 49 5
+      "50": rgb(251 250 212)
+      "100": rgb(249 248 194)
+      "200": rgb(247 245 170)
+      "300": rgb(242 240 124)
+      "400": rgb(238 235 78)
+      "500": rgb(235 232 54)
+      "600": rgb(233 231 31)
+      "700": rgb(194 191 19)
+      "800": rgb(148 145 15)
+      "900": rgb(101 100 10)
+      "950": rgb(50 49 5)
